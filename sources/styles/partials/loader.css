@@ -1,0 +1,35 @@
+/* Loader */
+
+.loader{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 150;
+  height: 100vh;
+  width: 100vw;
+  background-color:black;
+}
+
+.loader__number{
+  font-size: 200px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 35vh;
+  left: 5vw;
+}
+
+.loader__bar{
+  background-color:black;
+  width: 100vw;
+  height: 3px;
+  position: absolute;
+  top: calc(50vh - 1.5px);
+  left: 0;
+}
+
+.loader__bar-full{
+  width: 0;
+  height: 3px;
+  background-color: white;
+}

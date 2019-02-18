@@ -1,0 +1,111 @@
+/* Partie navigation */
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body{
+  background-color: black;
+  font-family: 'Montserrat', cursive;
+}
+
+.scrollVertical{
+  overflow-y: scroll;
+}
+
+.project__nav-cover{
+  height: 100vh;
+  width: 15vw;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  position: relative;
+  cursor: pointer
+}
+
+
+.nav__cover-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: flex-start;
+}
+
+@media screen and (min-width: 1100px){
+  .nav__cover-left:hover .project__nav-line{
+    width: 15vw;
+  }
+  .nav__cover-right:hover .project__nav-line{
+    width: 15vw;
+  }
+  .project__nav-line{
+    width: 7.5vw;
+  }
+  .nav__cover-left:hover .nav__number-left{
+    left: 0px;
+    filter: blur(0px);
+    opacity:0.3;
+  }
+  .nav__cover-right:hover .nav__number-right{
+    right: 0px;
+    filter: blur(0px);
+    opacity:0.3;
+  }
+  .nav__cover-left .nav__number-left{
+    top: 37.5%;
+    left: -40px;
+    font-size: 150px;
+  }
+  .nav__cover-right .nav__number-right{
+    top: 37.5%;
+    right: -40px;
+    font-size: 150px;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1100px) {
+  .nav__cover-right .nav__number-right{
+    top: 42%;
+    font-size: 100px;
+  }
+  .nav__cover-left .nav__number-left{
+    top: 42%;
+    font-size: 100px;
+  }
+}
+
+.nav__cover-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: flex-end;
+}
+
+.project__nav-line{
+  display: block;
+  width: 10vw;
+  height: 3px;
+  background-color: white;
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.project__nav-number{
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0.2;
+  filter: blur(2px);
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.nav__number-left{
+  position: absolute;
+  top: 46.5%;
+  left: 0px;
+}
+
+.nav__number-right{
+  position: absolute;
+  top: 46.5%;
+  right: 0px;
+}

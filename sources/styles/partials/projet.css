@@ -1,0 +1,202 @@
+/* Partie projet */
+
+.portfolio__project__content{
+  display: inline-flex;
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.project__content{
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+	text-transform: uppercase;
+  text-align: center;
+}
+
+.project__close-btn{
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 5vh;
+}
+
+.project__name{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.presentation .project__name-split, .project__name-split{
+  cursor: pointer;
+  transition: color 1s cubic-bezier(0.77, 0, 0.175, 1);
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+  position: relative;
+}
+
+@media screen and (min-width: 720px){
+  .presentation .project__name-split{
+	   font-size: 7em;
+  }
+  .project__name-split{
+	   font-size: 7em;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .presentation .project__name-split{
+	   font-size: 10em;
+  }
+  .project__name-split{
+	   font-size: 10em;
+  }
+}
+
+.presentation .project__name-split:hover {
+	color: transparent;
+	transition: none;
+}
+
+.presentation .project__name-split::before,
+.presentation .project__name-split::after {
+	content: attr(data-letters);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #ffffff;
+	overflow: hidden;
+	transition: color 0.5s, transform 0.5s;
+}
+
+.presentation .project__name-split::before {
+clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.presentation .project__name-split::after {
+clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.presentation .project__name-split:hover::before,
+.presentation .project__name-split:hover::after {
+	color: #fff;
+	transition: color 0.5s, transform 0.5s;
+}
+
+.presentation .project__name-split:hover::before {
+	transform: translate3d(4px,1px,0);
+}
+
+.presentation .project__name-split:hover::after {
+	transform: translate3d(-4px,-1px,0);
+}
+
+.project__open .project__subject{
+  opacity: 1 !important;
+}
+
+.project__subject{
+  margin-top: 20px;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.active .project__image{
+  height: 50vh;
+}
+
+.project__image{
+  height: 0vh;
+  width: 100vw;
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
+  clip-path: polygon(0 24%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__image.open {
+  transform: translate(0) !important;
+}
+
+.active .project__description{
+  height: auto;
+}
+
+.project__description{
+  height: 0vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #F9F2CB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__description img{
+  width: 100vw;
+}
+
+@media screen and (min-width: 720px){
+  .project__description img{
+    width: 70vw;
+    margin:15vw;
+  }
+}
+
+.project__open .project__image{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.project__open .project__name{
+  height:50vh;
+}
+
+.project__open .project__description{
+  height:250vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.porject__description-maquette{
+  height: 200vh;
+  width: 50vw;
+  background-color: #A4AE9D;
+}
+
+.project__content-1 .project__image{
+  background-color: #2F4858;
+}
+
+.project__content-2 .project__image{
+  background-color: #8BC967;
+}
+
+.project__content-3 .project__image{
+  background-color: #3BAD7E;
+}
+
+.project__content-4 .project__image{
+  background-color: #008C86;
+}
+
+.project__content-5 .project__image{
+  background-color: #F98E71;
+}
+
+.project__content-6 .project__image{
+  background-color: #FF7196;
+}

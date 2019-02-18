@@ -1,0 +1,135 @@
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxime Roudier │ Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./sources/styles/reset.css">
+  <link rel="stylesheet" href="./sources/styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="shortcut icon" href="./sources/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./sources/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="loader">
+  <div class="loader__number">
+    <p><span>0</span>%</p>
+  </div>
+  <div class="loader__bar">
+    <div class="loader__bar-full">
+
+    </div>
+  </div>
+</div>
+<main class="portfolio">
+  <section class="portfolio__head">
+    <div class="portfolio__head-content">
+      <p class="portfolio__head__logo">Maxime.</p>
+      <p class="portfolio__head__about visible">About Me</p>
+      <p class="portfolio__head__project" href="#">All project</p>
+    </div>
+  </section>
+  <section class="portfolio__about">
+    <div class="portfolio__about-content">
+      <h1>Hi ! I'm <strong>Maxime Roudier</strong></h1>
+      <div class="about__text">
+        <ul>
+          <li>Frontend / Backend</li>
+          <li>Developper</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu gravida lorem. Suspendisse ac purus id massa feugiat vehicula. Nulla porttitor, mi in bibendum ullamcorper, sem arcu auctor mauris, vel aliquam nunc sapien sed est. Duis cursus, elit imperdiet pulvinar dignissim, tellus mauris vehicula magna, id fringilla mi elit eget nunc. Sed tincidunt commodo turpis eget congue. Vestibulum dolor arcu, consequat sed nisi sollicitudin, scelerisque dictum est. Vestibulum non ligula id ante efficitur sodales. Integer laoreet gravida lorem. Cras eget venenatis erat. Fusce vel sem a felis luctus consectetur. Mauris varius, erat sit amet facilisis commodo, dui risus auctor odio, eu dignissim eros augue sed quam.</p>
+        <a href="">Télécharger mon cv</a>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio__project">
+    <div class="project__nav-cover nav__cover-left" id="left">
+      <p class="project__nav-number nav__number-left">00</p>
+      <span class="project__nav-line project__nav-left"></span>
+    </div>
+    <div class="portfolio__project__content">
+      <article id="project1" class="project__content presentation project__content-1 active">
+        <div class="project__name" id="project-name-1">
+          <p class="project__name-split" data-letters="Marshall">Marshall</p>
+          <p class="project__subject">UX Design</p>
+        </div>
+        <button type="button" name="button" class="project__close-btn">Return to all</button>
+        <div class="project__image">
+
+        </div>
+        <div class="project__description">
+          <div class="porject__description-maquette">
+
+          </div>
+        </div>
+      </article>
+      <article id="project2" class="project__content presentation project__content-2">
+        <div class="project__name" id="project-name-2">
+          <p class="project__name-split" data-letters="Lily">Lily</p>
+          <p class="project__subject">UX / UI Design</p>
+        </div>
+        <button type="button" name="button" class="project__close-btn">Return to all</button>
+        <div class="project__image">
+
+        </div>
+        <div class="project__description">
+          <div class="porject__description-maquette">
+
+          </div>
+        </div>
+      </article>
+      <article id="project3" class="project__content presentation project__content-3">
+        <div class="project__name" id="project-name-3">
+          <p class="project__name-split" data-letters="Barney">Barney</p>
+          <p class="project__subject">Wordpress Website</p>
+        </div>
+        <button type="button" name="button" class="project__close-btn">Return to all</button>
+        <div class="project__image">
+
+        </div>
+        <div class="project__description">
+          <div class="porject__description-maquette">
+
+          </div>
+        </div>
+      </article>
+      <article id="project4" class="project__content presentation project__content-4">
+        <div class="project__name" id="project-name-4">
+          <p class="project__name-split" data-letters="Robin">Robin</p>
+          <p class="project__subject">Web Design & Intégration</p>
+        </div>
+        <button type="button" name="button" class="project__close-btn">Return to all</button>
+        <div class="project__image">
+
+        </div>
+        <div class="project__description">
+          <div class="porject__description-maquette">
+
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="project__nav-cover nav__cover-right" id="right">
+      <span class="project__nav-line project__nav-right"></span>
+      <p class="project__nav-number nav__number-right">02</p>
+    </div>
+  </section>
+</main>
+<aside class="portfolio__link">
+  <div class="portfolio__link-content">
+    <ul class="portfolio__link-list">
+      <li><a href="#">Linkedin</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">Behance</a></li>
+    </ul>
+  </div>
+</aside>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="./sources/js/script.js"></script>
+</body>
+</html>
